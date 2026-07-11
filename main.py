@@ -41,7 +41,7 @@ async def extract_text(file: UploadFile = File(...)):
 
     try:
         response = client.chat.completions.create(
-            model="meta-llama/llama-4-scout-17b-16e-instruct",
+        model = "qwen-2.5-coder-32b"
             messages=[
                 {
                     "role": "user",
