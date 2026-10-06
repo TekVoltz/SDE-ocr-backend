@@ -41,7 +41,7 @@ async def extract_text(file: UploadFile = File(...)):
 
     try:
         response = client.chat.completions.create(
-        model = "qwen-2.5-coder-32b"
+        model = "qwen/qwen3.8-27b",
             messages=[
                 {
                     "role": "user",
